@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 30 Jan 2026 00:00:00 -0000
+Source: ros-humble-web-video-server
+Binary: ros-humble-web-video-server
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.1.1-3-g02a5ffc-2026.02.16.09.18
+Distribution: jammy
+Urgency: high
+Maintainer: Błażej Sowa <blazej@fictionlab.pl>
+Changed-By: Błażej Sowa <blazej@fictionlab.pl>
+Description:
+ ros-humble-web-video-server - HTTP Streaming of ROS Image Topics in Multiple Formats
+Changes:
+ ros-humble-web-video-server (2.1.1-3-g02a5ffc-2026.02.16.09.18) jammy; urgency=high
+ .
+   * refactor: Add clang-tidy checks (#195)
+   * feat: Use pluginlib to load streamer plugins at runtime, general refactor (#192)
+   * Contributors: Błażej Sowa
+Checksums-Sha1:
+ 4dc838397eb01365ef0bebbe3fc129e9f78cd129 6245992 ros-humble-web-video-server-dbgsym_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.ddeb
+ 6ba8634bb1276db156b010d8ea1aa7f168339168 35465 ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.buildinfo
+ 323da17b58ef1031b4b3867dd4afeb85f590ac85 271234 ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.deb
+Checksums-Sha256:
+ 8c5d927460f5aa0f38f62d2841af3bc1432e5034c2e8a20785fede1a39e166f7 6245992 ros-humble-web-video-server-dbgsym_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.ddeb
+ 257f03f734281ed5ab05ae6ac3e754ea69c65a61a90a177b949378f76ae4447c 35465 ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.buildinfo
+ 90f6974518d9697a02cc635a6b173f806f09b454fc5838ca42f95eba2dd3526a 271234 ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.deb
+Files:
+ 3e1dd63da7d791fdbe01ce81ae226b5c 6245992 debug optional ros-humble-web-video-server-dbgsym_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.ddeb
+ 68ce5636657d5d46d084f888f2288609 35465 misc optional ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.buildinfo
+ b381e277df78672b7e77e24e07f37ea7 271234 misc optional ros-humble-web-video-server_2.1.1-3-g02a5ffc-2026.02.16.09.18_arm64.deb
