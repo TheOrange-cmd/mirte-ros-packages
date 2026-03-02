@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 25 Feb 2026 00:00:00 -0000
+Source: ros-humble-web-video-server
+Binary: ros-humble-web-video-server
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.1.0-2026.03.02.15.25
+Distribution: jammy
+Urgency: high
+Maintainer: Błażej Sowa <blazej@fictionlab.pl>
+Changed-By: Błażej Sowa <blazej@fictionlab.pl>
+Description:
+ ros-humble-web-video-server - HTTP Streaming of ROS Image Topics in Multiple Formats
+Changes:
+ ros-humble-web-video-server (3.1.0-2026.03.02.15.25) jammy; urgency=high
+ .
+   * feat: Add shutdown handler for client to call and close alive sockets (#194)
+   * Contributors: Błażej Sowa, varunverlencar
+Checksums-Sha1:
+ 6cac43c34965c872d1e2fe1503ff09a1ce67e93b 6266314 ros-humble-web-video-server-dbgsym_3.1.0-2026.03.02.15.25_arm64.ddeb
+ 4cc9e4ba85c4faa78aca9e3d92e1d4ca1be6ea87 35402 ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.buildinfo
+ ae4cc69f549cb7d223911126721438690278fb35 272918 ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.deb
+Checksums-Sha256:
+ bd4e485fceeca17afb542e8024774372bab7947bbed5e51e8dd8129d8b74d4b3 6266314 ros-humble-web-video-server-dbgsym_3.1.0-2026.03.02.15.25_arm64.ddeb
+ 2393c5f9ef81bde3e6de5a8936f5d9dd53246b10a735c03e9ea3bf199c0ec684 35402 ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.buildinfo
+ d23b52084b6b1d3085c9eccba05b84d9b9004402acea6e3b27234aa012024f49 272918 ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.deb
+Files:
+ e1a91a5ad4d6a6a0f57125de1847cb31 6266314 debug optional ros-humble-web-video-server-dbgsym_3.1.0-2026.03.02.15.25_arm64.ddeb
+ 680df0111fa7f6b05f9071d4d8dee264 35402 misc optional ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.buildinfo
+ d938753480c96973221e8f31c599c935 272918 misc optional ros-humble-web-video-server_3.1.0-2026.03.02.15.25_arm64.deb
