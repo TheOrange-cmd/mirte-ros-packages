@@ -9,7 +9,7 @@
     #   type: pid_controller/PidController
 
     mirte_base_controller:
-      type: clearpath_mecanum_drive_controller/MecanumDriveController
+      type: mecanum_drive_controller/MecanumDriveController
 
 /**/mirte_base_controller:
   ros__parameters:

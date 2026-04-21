@@ -585,7 +585,7 @@
 
 
 <gazebo>
-    <plugin filename="libgazebo_grasp_fix.so" name="gazebo_grasp_fix">
+    <!-- <plugin filename="libgazebo_grasp_fix.so" name="gazebo_grasp_fix">
        <arm>
           <arm_name>finger_gripper</arm_name>
           <palm_link>wrist</palm_link>
@@ -602,7 +602,7 @@
        <max_grip_count>8</max_grip_count>
        <release_tolerance>0.005</release_tolerance>
        <disable_collisions_on_attach>false</disable_collisions_on_attach>
-    </plugin>
+    </plugin> -->
 </gazebo>
 
 
