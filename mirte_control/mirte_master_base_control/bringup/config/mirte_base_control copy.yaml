@@ -1,16 +1,3 @@
-# /**/controller_manager:
-#   ros__parameters:
-#     update_rate: 10  # Hz
-
-#     joint_state_broadcaster:
-#       type: joint_state_broadcaster/JointStateBroadcaster
-
-#     pid_wheels_controller:
-#       type: pid_controller/PidController
-
-#     mirte_base_controller:
-#       type: mecanum_drive_controller/MecanumDriveController
-
 /**/controller_manager:
   ros__parameters:
     update_rate: 10  # Hz
@@ -19,7 +6,7 @@
       type: joint_state_broadcaster/JointStateBroadcaster
 
     pid_wheels_controller:
-      type: pid_controller/PidController    # must stay for chaining
+      type: pid_controller/PidController
 
     mirte_base_controller:
       type: mecanum_drive_controller/MecanumDriveController
@@ -72,36 +59,22 @@
 
     pose_covariance_diagonal: [0.0, 7.0, 14.0, 21.0, 28.0, 35.0]
 
+
+
 /**/pid_wheels_controller:
   ros__parameters:
     command_interface: velocity
+
     reference_and_state_interfaces: ["velocity"]
+
+    # reference_and_state_dof_names:
     dof_names:
       - front_left_wheel_joint
       - rear_left_wheel_joint
       - rear_right_wheel_joint
       - front_right_wheel_joint
     gains:
-      front_left_wheel_joint:  {p: 0.0, i: 0.0, d: 0.0, i_clamp_max: 0.0, i_clamp_min: 0.0}
-      rear_left_wheel_joint:   {p: 0.0, i: 0.0, d: 0.0, i_clamp_max: 0.0, i_clamp_min: 0.0}
-      rear_right_wheel_joint:  {p: 0.0, i: 0.0, d: 0.0, i_clamp_max: 0.0, i_clamp_min: 0.0}
-      front_right_wheel_joint: {p: 0.0, i: 0.0, d: 0.0, i_clamp_max: 0.0, i_clamp_min: 0.0}
-    feedforward_gain: 1.0
-
-# /**/pid_wheels_controller:
-#   ros__parameters:
-#     command_interface: velocity
-
-#     reference_and_state_interfaces: ["velocity"]
-
-#     # reference_and_state_dof_names:
-#     dof_names:
-#       - front_left_wheel_joint
-#       - rear_left_wheel_joint
-#       - rear_right_wheel_joint
-#       - front_right_wheel_joint
-#     gains:
-#       front_left_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
-#       rear_left_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
-#       rear_right_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
-#       front_right_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
+      front_left_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
+      rear_left_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
+      rear_right_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}
+      front_right_wheel_joint: {p: 1.5, i: 0.5, d: 0.01, i_clamp_max: 15.0, i_clamp_min: -15.0, antiwindup: true}

@@ -99,11 +99,13 @@
             <plugin name="mirte_lidar" filename="libmirte_lidar_plugin.so">
               <frame_name>lidar_link</frame_name>
               <topic_name>scan</topic_name>
-              <yaw_correction>0</yaw_correction>
               <ego_filter>
                 <enabled>true</enabled>
                 <min_range>0.01</min_range>
-                <footprint>-0.096 -0.069, -0.096 0.069, 0.02 0.069, 0.02 -0.069</footprint>
+                <footprint>0.0283 0.1021, 0.0283 0.1384, 0.0715 0.1384, 0.0715 0.1021</footprint>
+                <footprint_0>-0.1034 -0.0732, -0.1034 -0.0343, -0.0677 -0.0343, -0.0677 -0.0732</footprint_0>
+                <footprint_1>0.0991 -0.0202, 0.0991 0.0245, 0.1358 0.0245, 0.1358 -0.0202</footprint_1>
+                <footprint_2>-0.1034 0.0343, -0.1034 0.0732, -0.0677 0.0732, -0.0677 0.0343</footprint_2>
               </ego_filter>
             </plugin>
         </sensor>
