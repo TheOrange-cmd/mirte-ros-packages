@@ -26,6 +26,25 @@
         <joint name="shoulder_pan_joint" value="0"/>
         <joint name="wrist_joint" value="0"/>
     </group_state>
+    <!-- Placeholder values for the first arm-pose manager iteration. Tune these later. -->
+    <group_state name="drive" group="mirte_arm">
+        <joint name="elbow_joint" value="-1.55"/>
+        <joint name="shoulder_lift_joint" value="-1.55"/>
+        <joint name="shoulder_pan_joint" value="0.0"/>
+        <joint name="wrist_joint" value="1.55"/>
+    </group_state>
+    <group_state name="flower_detection" group="mirte_arm">
+        <joint name="elbow_joint" value="-0.79"/>
+        <joint name="shoulder_lift_joint" value="0.26"/>
+        <joint name="shoulder_pan_joint" value="-1.55"/>
+        <joint name="wrist_joint" value="-1.55"/>
+    </group_state>
+    <group_state name="apriltag_detection" group="mirte_arm">
+        <joint name="elbow_joint" value="-0.44"/>
+        <joint name="shoulder_lift_joint" value="-1.13"/>
+        <joint name="shoulder_pan_joint" value="-1.55"/>
+        <joint name="wrist_joint" value="-1.55"/>
+    </group_state>
     <group_state name="open" group="mirte_gripper">
         <joint name="gripper_joint" value="-0.2"/>
     </group_state>
